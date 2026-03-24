@@ -1359,7 +1359,7 @@ oplus_features=(
     "oplus.software.string_gc_support"
     "oplus.software.display.rgb_ball_support^色温调节球"
     "oplus.software.camera_volume_quick_launch" #GT5Pro
-    "oplus.software.display.intelligent_color_temperature_support"
+    #"oplus.software.display.intelligent_color_temperature_support"  # not working
     "oplus.software.display.oha_support"
     "oplus.software.display.smart_color_temperature_rhythm_health_support"
     "oplus.software.display.mura_enhance_brightness_support"
@@ -1372,8 +1372,8 @@ oplus_features=(
     "oplus.software.smart_sidebar_video_assistant^侧边栏视频助手"
     "oplus.video.audio.volume.enhancement^视频音量增强" 
     "oplus.software.display.lux_small_debounce_expand_support"
-    "oplus.hardware.display.no_bright_eyes_low_freq_strobe^低亮度屏闪"
-    "oplus.software.audio.super_volume_4x^400%超级音量"
+    #"oplus.hardware.display.no_bright_eyes_low_freq_strobe^低亮度屏闪"  # not working
+    #"oplus.software.audio.super_volume_4x^400%超级音量"  # not working
     "oplus.software.radio.networkless_sms_support"
     "com.oplus.location.car_phone_connection"
    "oplus.software.display.enhance_brightness_with_uidimming^LocalHDR"
@@ -1381,9 +1381,9 @@ oplus_features=(
     "oplus.software.radio.ai_link_boost"
     "oplus.software.radio.ai_link_boost_notification"
     "oplus.software.radio.ai_link_boost_railway_notification"
-    "oplus.software.systemui.pin_task^钉到流体云"
+    #"oplus.software.systemui.pin_task^钉到流体云"  # not working
     "oplus.software.radio.hfp_comm_shared_support^iPhone互联"
-    "oplus.hardware.display.motion_sickness^晕动舒缓提示"
+    #"oplus.hardware.display.motion_sickness^晕动舒缓提示"  # not working
 )
 
 for oplus_feature in ${oplus_features[@]}; do 
@@ -1407,7 +1407,7 @@ app_features=(
     "feature.hottouch.anim.support"
     "os.charge.settings.longchargeprotection.ai"
     "os.charge.settings.smartchargeswitch.open"
-    "com.oplus.eyeprotect.ai_intelligent_eye_protect_support"
+    #"com.oplus.eyeprotect.ai_intelligent_eye_protect_support"   # causes crash on 16.0.5.701
     "com.android.settings.network_access_permission"
     "os.charge.settings.batterysettings.batteryhealth^电池健康度"
     "com.oplus.mediaturbo.service"
