@@ -1660,6 +1660,13 @@ if [[ ${base_device_family} == "OPSM8250" ]]; then
    fi
 fi
 
+# ConsumerIRApp (useless since not working on OP8/9 series)
+port_consumer_ir_dir=$(find build/portrom/images/my_product -type d -name "ConsumerIRApp")
+if [[ -d "${port_consumer_ir_dir}" ]];then
+    blue "正在删除 [ConsumerIRApp]" "Removing [ConsumerIRApp]"
+    rm -rf "$port_consumer_ir_dir"
+fi
+
 # Engineer mode
 rm -rf build/portrom/images/my_product/etc/engineermode/*
 cp -rf build/baserom/images/my_product/etc/engineermode/* build/portrom/images/my_product/etc/engineermode
