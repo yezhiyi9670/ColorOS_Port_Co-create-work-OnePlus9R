@@ -4,7 +4,7 @@
 
 受体：LE2100_14.0.0.605-CN01（OnePlus 9R CN，[大侠阿木资源站可下载](https://yun.daxiaamu.com/OnePlus_Roms/%E4%B8%80%E5%8A%A09R/ColorOS%20LE2100_14.0.0.605(CN01)%20H.28/)）
 
-供体：PKX110_16.0.5.701-CN01（OnePlus 13T CN，[DanielSpringer OTA 下载器可下载](https://roms.danielspringer.at/index.php?view=ota)）
+供体：PKX110_16.0.3.502-CN01（OnePlus 13T CN，[DanielSpringer OTA 下载器可下载](https://roms.danielspringer.at/index.php?view=ota)）
 
 操作系统：Ubuntu 24.04
 
@@ -71,7 +71,7 @@
 |蓝牙文件传输|✅|
 |NFC 识别|✅|
 |NFC 门禁卡|✅|
-|一加互传|
+|一加互传|✅|
 
 ### 定位
 
