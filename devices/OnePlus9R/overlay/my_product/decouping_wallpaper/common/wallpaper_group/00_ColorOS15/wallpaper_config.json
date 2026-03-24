@@ -1,0 +1,88 @@
+{
+  "group": "ColorOS15",
+  "title": "ColorOS15",
+  "version": 3,
+  "wallpapers": [
+    {
+      "thumbPath": "./ColorOS1506.webp",
+      "originPath": "./ColorOS1506.webp",
+      "videoPath": "./ColorOS1506.mp4"
+    },
+    {
+      "thumbPath": "./ColorOS1501.webp",
+      "originPath": "./ColorOS1501.webp"
+    },
+    {
+      "thumbPath": "./ColorOS1502.webp",
+      "originPath": "./ColorOS1502.webp"
+    },
+    {
+      "thumbPath": "./ColorOS1503.webp",
+      "originPath": "./ColorOS1503.webp"
+    },
+    {
+      "thumbPath": "./ColorOS1504.webp",
+      "originPath": "./ColorOS1504.webp"
+    },
+    {
+      "thumbPath": "./ColorOS1505.webp",
+      "originPath": "./ColorOS1505.webp"
+    },
+    {
+      "thumbPath": "./product_wallpaper9.webp",
+      "originPath": "./product_wallpaper9.webp"
+    },
+    {
+      "thumbPath": "./product_wallpaper10.webp",
+      "originPath": "./product_wallpaper10.webp"
+    },
+    {
+      "thumbPath": "./product_wallpaper11.webp",
+      "originPath": "./product_wallpaper11.webp"
+    },
+    {
+      "thumbPath": "./product_wallpaper12.webp",
+      "originPath": "./product_wallpaper12.webp"
+    },
+    {
+      "thumbPath": "./product_wallpaper13.webp",
+      "originPath": "./product_wallpaper13.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper5.webp",
+      "originPath": "./extra_wallpaper5.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper6.webp",
+      "originPath": "./extra_wallpaper6.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper7.webp",
+      "originPath": "./extra_wallpaper7.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper8.webp",
+      "originPath": "./extra_wallpaper8.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper9.webp",
+      "originPath": "./extra_wallpaper9.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper10.webp",
+      "originPath": "./extra_wallpaper10.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper11.webp",
+      "originPath": "./extra_wallpaper11.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper12.webp",
+      "originPath": "./extra_wallpaper12.webp"
+    },
+    {
+      "thumbPath": "./extra_wallpaper13.webp",
+      "originPath": "./extra_wallpaper13.webp"
+    }
+  ]
+}
