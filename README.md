@@ -17,7 +17,7 @@
 
 ## 测试机型及版本
 
-> **本仓库针对的实例**：OP13T → OP9R, ColorOS，[查看实验记录](./MEMO_OnePlus9R.md)
+> **本仓库针对的实例**：OP13T → OP9R, ColorOS 16，[查看实验记录](./MEMO_OnePlus9R.md)
 
 BASE:
 - OnePlus 8T (ColorOS_14.0.0.600)

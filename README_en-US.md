@@ -18,7 +18,7 @@
 
 ## Tested devices and portroms
 
-> **The repo's focused instance**：OP13T → OP9R, ColorOS，[view experiment records (in Chinese)](./MEMO_OnePlus9R.md)
+> **The repo's focused instance**：OP13T → OP9R, ColorOS 16, [view experiment records (in Chinese)](./MEMO_OnePlus9R.md)
 
 - Test Base ROM:  
 OnePlus 8T (ColorOS_14.0.0.600), 
