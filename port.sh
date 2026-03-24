@@ -1185,10 +1185,10 @@ sed -i "s/ro.vendor.oplus.market.enname=.*/ro.vendor.oplus.market.enname=${base_
 remove_prop_v2 "persist.oplus.software.audio.right_volume_key"
 remove_prop_v2 "persist.oplus.software.alertslider.location"
 
-
-sed -i -e '$a\'$'\n''persist.adb.notify=0' build/portrom/images/system/system/build.prop
-sed -i -e '$a\'$'\n''persist.sys.usb.config=mtp,adb' build/portrom/images/system/system/build.prop
-sed -i -e '$a\'$'\n''persist.sys.disable_rescue=true' build/portrom/images/system/system/build.prop
+# Shall not be present in production
+# sed -i -e '$a\'$'\n''persist.adb.notify=0' build/portrom/images/system/system/build.prop
+# sed -i -e '$a\'$'\n''persist.sys.usb.config=mtp,adb' build/portrom/images/system/system/build.prop
+# sed -i -e '$a\'$'\n''persist.sys.disable_rescue=true' build/portrom/images/system/system/build.prop
 
 base_rom_density=$(grep "ro.sf.lcd_density" --include="*.prop" -r build/baserom/images/my_product | head -n 1 | cut -d "=" -f2)
 [ -z ${base_rom_density} ] && base_rom_density=480
