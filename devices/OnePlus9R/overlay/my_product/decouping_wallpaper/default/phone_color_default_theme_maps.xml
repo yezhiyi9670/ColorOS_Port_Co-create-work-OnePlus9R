@@ -24,4 +24,13 @@
         <DefaultWallpaperLock>NA</DefaultWallpaperLock>
         <DefaultWallpaperComponent>com.android.wallpaper.livepicker/.service.video.op.Op92VideoWallpaper</DefaultWallpaperComponent>
     </PhoneColor>
+
+    <!--The missing Moss Green color, taken from stock ColorOS 11-->
+    <PhoneColor name="FFB8DCD2">
+        <ColorDescription>Moss Green</ColorDescription>
+        <ColorDescriptionCN>青宇</ColorDescriptionCN>
+        <DefaultTheme_lock>NA</DefaultTheme_lock>
+        <DefaultTheme_system>NA</DefaultTheme_system>
+        <DefaultWallpaperComponent>com.android.wallpaper.livepicker/.service.video.op.Op94VideoWallpaper</DefaultWallpaperComponent>
+    </PhoneColor>
 </PhoneColors>
