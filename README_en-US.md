@@ -17,6 +17,9 @@
 - Oppo Find X3 Oppo Find X3 Pro
 
 ## Tested devices and portroms
+
+> **The repo's focused instance**：OP13T → OP9R, ColorOS，[view experiment records (in Chinese)](./MEMO_OnePlus9R.md)
+
 - Test Base ROM:  
 OnePlus 8T (ColorOS_14.0.0.600), 
 OnePlus 8 (ColorOS_IN2010_13.1.190), 
