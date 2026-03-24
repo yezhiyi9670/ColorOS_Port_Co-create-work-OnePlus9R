@@ -1660,6 +1660,34 @@ if [[ ${base_device_family} == "OPSM8250" ]]; then
    fi
 fi
 
+# Engineer mode
+rm -rf build/portrom/images/my_product/etc/engineermode/*
+cp -rf build/baserom/images/my_product/etc/engineermode/* build/portrom/images/my_product/etc/engineermode
+
+base_engineer_mode_dir=$(find build/baserom/images/system_ext -type d -name "OplusCommercialEngineerMode")
+port_engineer_mode_dir=$(find build/portrom/images/system_ext -type d -name "OplusCommercialEngineerMode")
+if [[ -d "${base_engineer_mode_dir}" ]] && [[ -d "${port_engineer_mode_dir}" ]];then
+    blue "正在替换 [OplusCommercialEngineerMode]" "Replacing [OplusCommercialEngineerMode]"
+    rm -rf "$port_engineer_mode_dir"/*
+    cp -rf "$base_engineer_mode_dir"/* "$port_engineer_mode_dir"/
+fi
+
+base_engineer_mode_dir=$(find build/baserom/images/system_ext -type d -name "OplusCommercialEngineerCamera")
+port_engineer_mode_dir=$(find build/portrom/images/system_ext -type d -name "OplusCommercialEngineerCamera")
+if [[ -d "${base_engineer_mode_dir}" ]] && [[ -d "${port_engineer_mode_dir}" ]];then
+    blue "正在替换 [OplusCommercialEngineerCamera]" "Replacing [OplusCommercialEngineerCamera]"
+    rm -rf "$port_engineer_mode_dir"/*
+    cp -rf "$base_engineer_mode_dir"/* "$port_engineer_mode_dir"/
+fi
+
+base_engineer_mode_dir=$(find build/baserom/images/system_ext -type d -name "OplusEngineerNetwork")
+port_engineer_mode_dir=$(find build/portrom/images/system_ext -type d -name "OplusEngineerNetwork")
+if [[ -d "${base_engineer_mode_dir}" ]] && [[ -d "${port_engineer_mode_dir}" ]];then
+    blue "正在替换 [OplusEngineerNetwork]" "Replacing [OplusEngineerNetwork]"
+    rm -rf "$port_engineer_mode_dir"/*
+    cp -rf "$base_engineer_mode_dir"/* "$port_engineer_mode_dir"/
+fi
+
 sourceOvoiceManagerService=$(find build/baserom/images/my_product -type d -name "OVoiceManagerService")
 if [[ -d "$sourceOvoiceManagerService" ]];then
     targetOvoiceManagerService=$(find build/portrom/images/my_product -type d -name "OVoiceManagerService")
