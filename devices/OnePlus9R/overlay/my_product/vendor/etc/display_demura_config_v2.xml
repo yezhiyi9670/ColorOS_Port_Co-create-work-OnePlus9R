@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+/** Copyright (C) 2024-2024, Oplus Holdings Corp Ltd. All rights reserved.
+ ** FileName: multimedia_display_apdemura_config.xml
+ ** Description: AP Demura Config
+ ** Version: 1.0
+ ** Date : 2024.05.01
+ ** Author: ChengLei@MULTIMEDIA.DISPLAY.ARCHITECTURE
+ **/
+-->
+
+<root>
+    <!-- must update version when you commit this file -->
+    <version>20260328</version>
+
+    <panel_id>
+        <id1 id="a5">
+            <id2 id="1">i1</id2>
+            <id2 id="2">i2</id2>
+            <id2 id="3">i3</id2>
+            <id2 id="4">i4</id2>
+            <id2 id="5">i5</id2>
+            <!-- default must be last one -->
+            <id2 id="*">default</id2>
+        </id1>
+        <!-- other must be last one, it is for the wrong panel -->
+        <id1 id="*">
+            <id2 id="*">other</id2>
+        </id1>
+    </panel_id>
+
+    <panel_stage stages="other,i1,i2,i3,i4,i5,default">
+
+        <!-- pwm: 3+18, bind_point max count:10, must sorted, the last one must be 8192 -->
+        <pwm_bind_points>
+            <!-- 2nit -->
+            <bind_point id="0" bin_id="0">22</bind_point>
+            <!-- 10nit -->
+            <bind_point id="1" bin_id="1">1415</bind_point>
+            <!-- 40nit -->
+            <bind_point id="2" bin_id="2">2689</bind_point>
+            <!-- 100nit -->
+            <bind_point id="3" bin_id="3">4067</bind_point>
+            <!-- 200nit -->
+            <bind_point id="4" bin_id="4">5557</bind_point>
+            <!-- sentinel value -->
+            <bind_point id="5" bin_id="5">8192</bind_point>
+        </pwm_bind_points>
+
+        <!-- dc1: 1+18, bind_point max count:10, must sorted, the last one must be 8192 -->
+        <dc1_bind_points>
+            <!-- 2nit -->
+            <bind_point id="0" bin_id="0">22</bind_point>
+            <!-- 10nit -->
+            <bind_point id="1" bin_id="1">1415</bind_point>
+            <!-- 40nit -->
+            <bind_point id="2" bin_id="2">2689</bind_point>
+            <!-- 100nit -->
+            <bind_point id="3" bin_id="3">4067</bind_point>
+            <!-- 200nit -->
+            <bind_point id="4" bin_id="4">5557</bind_point>
+            <!-- sentinel value -->
+            <bind_point id="5" bin_id="5">8192</bind_point>
+        </dc1_bind_points>
+
+        <!-- dc2: 1+1, bind_point max count:10, must sorted, the last one must be 8192 -->
+        <dc2_bind_points>
+            <!-- 2nit -->
+            <bind_point id="0" bin_id="0">22</bind_point>
+            <!-- 10nit -->
+            <bind_point id="1" bin_id="1">1415</bind_point>
+            <!-- 40nit -->
+            <bind_point id="2" bin_id="2">2689</bind_point>
+            <!-- 100nit -->
+            <bind_point id="3" bin_id="3">4067</bind_point>
+            <!-- 200nit -->
+            <bind_point id="4" bin_id="4">5557</bind_point>
+            <!-- sentinel value -->
+            <bind_point id="5" bin_id="5">8192</bind_point>
+        </dc2_bind_points>
+
+    </panel_stage>
+
+</root>
