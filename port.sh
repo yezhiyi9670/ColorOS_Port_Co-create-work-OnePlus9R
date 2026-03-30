@@ -10,7 +10,7 @@
 
 # Test Port ROM: OnePlus 12 (ColorOS_14.0.0.810), OnePlus ACE3V(ColorOS_14.0.1.621) Realme GT Neo5 240W(RMX3708_14.0.0.800)
 
-port_build_tag="+beta5@20260330"  # Displayed only on "about device" page. For informational purpose only.
+port_build_tag="+beta5"  # Displayed only on "about device" page. For informational purpose only.
 build_user="Bruce Teng, Co-Create team"
 build_host=$(hostname)
 
