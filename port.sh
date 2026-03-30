@@ -1254,6 +1254,15 @@ else
     sed -i '/^ro.build.display.id=/ s/\(.*\)\(([^)]*)\)/\1'"$port_build_tag"'\2/' build/portrom/images/my_product/etc/bruce/build.prop
 fi
 
+# Use Chinese product market name if the portrom's product name is in Chinese.
+if [[ $port_market_name == "一加 "* ]]; then
+    if grep -q "ro.vendor.oplus.market.name" build/portrom/images/my_manifest/build.prop;then
+        sed -i '/^ro.vendor.oplus.market.name=/ s/=OnePlus /=一加 /' test.txt build/portrom/images/my_manifest/build.prop
+    else
+        sed -i '/^ro.vendor.oplus.market.name=/ s/=OnePlus /=一加 /' test.txt build/portrom/images/my_product/etc/bruce/build.prop
+    fi
+fi
+
 propfile="build/portrom/images/my_product/etc/bruce/build.prop"
 
 if [[ $portIsColorOSGlobal == true ]]; then
