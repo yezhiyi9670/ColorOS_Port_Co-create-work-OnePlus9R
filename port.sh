@@ -1307,6 +1307,10 @@ if [[ $port_android_version -lt 16 ]];then
     else
         add_prop_v2 "persist.sys.oplus.anim_level" "1"
     fi
+else
+    if [[ $base_device_family == "OPSM8250" ]] || [[ $base_device_family == "OPSM8350" ]];then
+        add_prop_v2 "ro.hwui.use_vulkan" "true"  # Force enable vulkan as default UI renderer for SM8250 and SM8350 to improve fluency (confirmed to be working)
+    fi
 fi
 add_prop_v2 "ro.sf.lcd_density" "${base_rom_density}"
 
