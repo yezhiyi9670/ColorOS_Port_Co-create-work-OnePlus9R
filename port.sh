@@ -10,7 +10,7 @@
 
 # Test Port ROM: OnePlus 12 (ColorOS_14.0.0.810), OnePlus ACE3V(ColorOS_14.0.1.621) Realme GT Neo5 240W(RMX3708_14.0.0.800)
 
-port_build_tag=" | beta5@20260330"  # Displayed only on "about device" page. For informational purpose only.
+port_build_tag="+beta5@20260330 "  # Displayed only on "about device" page. For informational purpose only.
 build_user="Bruce Teng, Co-Create team"
 build_host=$(hostname)
 
@@ -1247,11 +1247,11 @@ else
     sed -i '/^ro.build.version.oplusrom.display=/ s/$/ | Co-Create Port/' build/portrom/images/my_product/etc/bruce/build.prop
 fi
 
-# Add port build tag (ro.build.display.id is displayed in "about device" mainpage, and ro.build.display.id.show is displayed elsewhere, so modify only the former)
-if grep -q "ro.build.display.id" build/portrom/images/my_manifest/build.prop;then
-    sed -i '/^ro.build.display.id=/ s/\(.*\)\(([^)]*)\)/\1'"$port_build_tag"'\2/' build/portrom/images/my_manifest/build.prop
+# Add port device code and build tag (note that ro.build.display.id.show is used for displaying, ro.build.display.id is not)
+if grep -q "ro.build.display.id.show" build/portrom/images/my_manifest/build.prop;then
+    sed -i '/^ro.build.display.id.show=/ s/\(.*\)\(([^)]*)\)/\1-'"$port_device_code""$port_build_tag"'\2/' build/portrom/images/my_manifest/build.prop
 else
-    sed -i '/^ro.build.display.id=/ s/\(.*\)\(([^)]*)\)/\1'"$port_build_tag"'\2/' build/portrom/images/my_product/etc/bruce/build.prop
+    sed -i '/^ro.build.display.id.show=/ s/\(.*\)\(([^)]*)\)/\1-'"$port_device_code""$port_build_tag"'\2/' build/portrom/images/my_product/etc/bruce/build.prop
 fi
 
 # Use Chinese product market name if the portrom's product name is in Chinese.
