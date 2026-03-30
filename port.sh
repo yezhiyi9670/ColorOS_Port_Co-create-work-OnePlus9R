@@ -1239,10 +1239,11 @@ cp -rf build/baserom/images/my_product/etc/fusionlight_profile/*  build/portrom/
 
 sed -i "/persist.vendor.display.pxlw.iris_feature=.*/d" build/portrom/images/my_product/etc/bruce/build.prop
 
+# Add Co-Create Team credits
 if grep -q "ro.build.version.oplusrom.display" build/portrom/images/my_manifest/build.prop;then
-    sed -i '/^ro.build.version.oplusrom.display=/ s/$/ ❤️ By Co-CreateTeam /' build/portrom/images/my_manifest/build.prop
+    sed -i '/^ro.build.version.oplusrom.display=/ s/$/ | Co-Create Port/' build/portrom/images/my_manifest/build.prop
 else
-    sed -i '/^ro.build.version.oplusrom.display=/ s/$/ ❤️ By Co-CreateTeam /' build/portrom/images/my_product/etc/bruce/build.prop
+    sed -i '/^ro.build.version.oplusrom.display=/ s/$/ | Co-Create Port/' build/portrom/images/my_product/etc/bruce/build.prop
 fi
 
 propfile="build/portrom/images/my_product/etc/bruce/build.prop"
