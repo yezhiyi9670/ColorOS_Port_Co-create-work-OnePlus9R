@@ -14,4 +14,4 @@ remove_data_encryption=false
 
 # Needed to manually extend super partition, in order to flash it successfully. 
 super_extended=false
-pack_method=super
+pack_method=super_image
