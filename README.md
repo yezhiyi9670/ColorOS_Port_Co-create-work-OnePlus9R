@@ -17,7 +17,11 @@
 
 ## 测试机型及版本
 
-> **本仓库针对的实例**：OP13T → OP9R, ColorOS 16，[查看实验记录](./MEMO_OnePlus9R.md)
+> **本仓库针对的实例**：
+> 
+> - OP13T → OP9R, ColorOS 16.0.3--16.0.5，[查看测试报告](./test_report/Report_OnePlus9R_16.0.3.md)
+>
+> - OP13 → OP9R, ColorOS 16.0.7，[查看测试报告](./test_report/Report_OnePlus9R_16.0.7.md)
 
 BASE:
 - OnePlus 8T (ColorOS_14.0.0.600)
@@ -61,7 +65,7 @@ PORT:
     # 安装依赖
     sudo ./setup.sh
     # 开始移植
-    sudo ./port.sh <底包路径> <移植包路径>
+    ./port.sh <底包路径> <移植包路径>
 ```
 - 路径可以是系统包链接，将路径替换为系统包下载链接即可
 - 请确保设备的运行内存足够使用，通常需要16G以上，存储空间请预留大约160G
