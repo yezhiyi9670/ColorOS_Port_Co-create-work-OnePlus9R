@@ -21,7 +21,9 @@
 > 
 > - OP13T → OP9R, ColorOS 16.0.3--16.0.5，[查看测试报告](./test_report/Report_OnePlus9R_16.0.3.md)
 >
-> - OP13 → OP9R, ColorOS 16.0.7，[查看测试报告](./test_report/Report_OnePlus9R_16.0.7.md)
+> - OP10P → OP9R, ColorOS 16.0.3，测试报告暂缺（与上一条相似，但不存在无效的「空间音频」功能，且系统默认设置更匹配设备性能）
+>
+> - OP13T → OP9R, ColorOS 16.0.7，[查看测试报告](./test_report/Report_OnePlus9R_16.0.7.md)
 
 BASE:
 - OnePlus 8T (ColorOS_14.0.0.600)
