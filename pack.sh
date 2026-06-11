@@ -18,11 +18,15 @@ pack_dir() {
 }
 
 if [[ "$1" != "" ]]; then
-    if [[ -d "$1" ]]; then
+    if [[ -f "$1/module.prop" ]]; then
         pack_dir "$1"
     else
-        echo "Not found: $1"
+        echo "Module not found: $1"
     fi
 else
-    echo "Please specify directory name"
+    for subdir in $(ls .); do
+        if [[ -f "$subdir/module.prop" ]]; then
+            pack_dir "$subdir"
+        fi
+    done
 fi
