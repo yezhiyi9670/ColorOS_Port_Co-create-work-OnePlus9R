@@ -1,0 +1,6 @@
+id=cosccp-enable_uidimming_hdr
+name=COS Co-Create: Enable HDR with UI Dimming
+version=1.1
+versionCode=101
+author=Co-Create team
+description=Enable UI Dimming HDR feature on builds that disable this. May cause flickering.

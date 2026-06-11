@@ -1,0 +1,6 @@
+id=cosccp-hwui_vulkan_switch
+name=COS Co-Create: HWUI Vulkan disable
+version=1.1
+versionCode=101
+author=Co-Create Team
+description=Force disable Vulkan (and use GLES) for HWUI rendering.
