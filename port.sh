@@ -10,7 +10,7 @@
 
 # Test Port ROM: OnePlus 12 (ColorOS_14.0.0.810), OnePlus ACE3V(ColorOS_14.0.1.621) Realme GT Neo5 240W(RMX3708_14.0.0.800)
 
-port_build_tag="+beta6"  # Displayed only on "about device" page. For informational purpose only.
+port_build_tag="+beta7"  # Displayed only on "about device" page. For informational purpose only.
 build_user="Bruce Teng, Co-Create team"
 build_host=$(hostname)
 
@@ -1446,7 +1446,7 @@ oplus_features=(
     #"oplus.software.audio.super_volume_4x^400%超级音量"  # not working
     "oplus.software.radio.networkless_sms_support"
     "com.oplus.location.car_phone_connection"
-   "oplus.software.display.enhance_brightness_with_uidimming^LocalHDR"
+   #"oplus.software.display.enhance_brightness_with_uidimming^LocalHDR"  # works but causes flicker and cannot be turned off
     "oplus.software.adaptive_smooth_animation^山海通信网络引擎"
     "oplus.software.radio.ai_link_boost"
     "oplus.software.radio.ai_link_boost_notification"
@@ -1671,6 +1671,7 @@ if grep -q "oplus.software.audio.alert_slider"  build/portrom/images/my_product/
 fi
 
 remove_feature "oplus.software.display.wcg_2.0_support" #修复切换屏幕色彩模式软重启
+remove_feature "oplus.software.display.enhance_brightness_with_uidimming" # works but causes flicker and cannot be turned off
 remove_feature "oplus.software.display.origin_roundcorner_support"
 remove_feature "oplus.software.vibration_ring_mute"
 remove_feature  "oplus.software.vibration_alarm_clock"
