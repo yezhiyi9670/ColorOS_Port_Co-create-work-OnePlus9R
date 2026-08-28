@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Usage examples:
 # $ pack.sh hwui_vulkan_enable (packs one dir)
